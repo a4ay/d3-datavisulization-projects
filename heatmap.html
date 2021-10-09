@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      body {
+        overflow-x: scroll;
+      }
+      #title {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      #description {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .d3-tip {
+        background-color: rgba(176, 196, 222, 0.75);
+        padding: 15px 10px;
+        border-radius: 6px;
+      }
+      .cell:hover {
+        stroke: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+    <p id="description">1753 - 2015: base temperature 8.66℃</p>
+    <div class="view"></div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <script src="./heatmap.js"></script>
+  </body>
+</html>
