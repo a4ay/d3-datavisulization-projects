@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .container {
+        text-align: center;
+      }
+      .container h1 {
+        font-size: 2.8rem;
+      }
+      svg {
+        min-height: 600px;
+        min-width: 1000px;
+        margin: 0px auto;
+      }
+
+      .tooltip {
+        position: absolute;
+        padding: 20px 5px;
+        border-radius: 6px;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      .county:hover {
+        fill: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">United States Educational Attainment</h1>
+      <p id="description">
+        Percentage of adults age 25 and older with a bachelor's degree or higher
+        (2010-2014)
+      </p>
+      <div class="canvas"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./choroplethmap.js"></script>
+  </body>
+</html>
